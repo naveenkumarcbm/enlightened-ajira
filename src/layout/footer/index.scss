@@ -1,0 +1,55 @@
+footer {
+  min-height: 40rem;
+  background-color: #333333;
+  color: #dddddd;
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  p {
+      margin: 2rem 0;
+  }
+
+  .address {
+    h3 {
+      margin: 2rem 0;
+    }
+  }
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 20rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  footer {
+    flex-direction: column;
+    font-size: 1.2rem;
+
+    & > div {
+      margin-top: 2rem;
+    }
+    ion-icon {
+      font-size: 2.2rem !important;
+    }
+
+    .footer-menu {
+      min-height: 15rem;
+    }
+    .address {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

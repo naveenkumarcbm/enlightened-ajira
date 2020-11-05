@@ -1,0 +1,161 @@
+.profile {
+  padding: 5rem;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 28rem;
+  }
+  &-image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-menu {
+    // width: 26rem;
+    height: 8rem;
+    cursor: pointer;
+
+    ion-icon:nth-child(1) {
+      display: none  !important;
+    }
+    ion-icon:nth-child(2) {
+      display: block !important;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2rem;
+
+      & + span {
+        color: #9b9b9b;
+      }
+    }
+  }
+}
+
+.menu-selected {
+  position: relative;
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0.2rem;
+    width: 100%;
+    border-bottom: solid 2px #000;
+  }
+}
+
+.profile-detail {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+}
+
+.profile-summary {
+  padding: 2rem;
+  border: 2px solid #333333;
+  width: 80%;
+}
+
+.order-card {
+  margin: 3rem 0;
+  width: 80%;
+  margin-left: 2rem;
+  span {
+    color: #9b9b9b;
+  }
+  & > div {
+    margin: 1rem 0;
+  }
+  ion-icon:nth-child(1) {
+    display: block !important;
+  }
+  ion-icon:nth-child(2) {
+    display: none !important;
+  }
+}
+
+.order-card-status {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  &::after {
+    position: absolute;
+    content: ' ';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #dddddd;
+  }
+}
+
+.order-status {
+  padding: 4px 2rem;
+  border-radius: 1rem 1rem 0 0;
+
+  &-pending {
+    background-color: #333333;
+    color: #dddddd;
+  }
+
+  &-delivered {
+    background-color: #dddddd;
+    color: #333333;
+  }
+}
+
+.user-form {
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 3rem;
+  grid-template-areas:
+    'fname lname'
+    'email email'
+    'phone phone'
+    'password password'
+    'confirmpassword confirmpassword';
+}
+
+.form-title {
+  color: #777777;
+}
+
+@media (max-width: 991px) {
+  .profile-detail{
+    grid-template-columns: 1fr;
+  }
+  .user-form {
+    grid-template-areas:
+      'fname' 'lname' 'email'
+      'phone'
+      'password'
+      'confirmpassword';
+  }
+  .profile-summary {
+    width: 100%;
+  }
+  .order-card {
+    ion-icon:nth-child(1) {
+      display: none !important;
+    }
+    ion-icon:nth-child(2) {
+      display: block !important;
+    }
+  }
+  .profile-menu {
+    ion-icon:nth-child(1) {
+      display: block !important;
+    }
+    ion-icon:nth-child(2) {
+      display: none !important;
+    } 
+  }
+}

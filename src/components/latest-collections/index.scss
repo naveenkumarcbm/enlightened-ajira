@@ -1,0 +1,27 @@
+.collection-section {
+  min-height: 30rem;
+}
+
+.itm-list {
+  width: 90vw;
+  margin: 2rem 5vw;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #dddddd;
+    border-radius: 1rem;
+  }
+
+//   &::-webkit-scrollbar-thumb {
+//     background: #888;
+//     border-radius: 1rem;
+//   }
+
+//   &::-webkit-scrollbar-thumb:hover {
+//     background: #555;
+//   }
+}
