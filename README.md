@@ -2,7 +2,8 @@
 
 #     Description:
 
-    A simple reactjs (v17.0) based application, with static pages craeted with reference to the design (https://www.figma.com/file/Fw4tVSYIqc65hybviNnyJ7/UI-Development-Task_Round1?node-id=0%3A1)
+    A simple reactjs (v17.0) based application, with static pages craeted with reference to the design (https://www.figma.com/file/Fw4tVSYIqc65hybviNnyJ7/UI-Development-Task_Round1?node-id=0%3A1).
+    No 3rd party plugins/ modules are used in the application. Entire application is build with plain reactjs and scss with responsive design.
     
 
 #    Technology used:
