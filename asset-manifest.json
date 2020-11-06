@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/enlightened-ajira/static/css/main.62b81d41.chunk.css",
+    "main.css": "/enlightened-ajira/static/css/main.c2fbe5d0.chunk.css",
     "main.js": "/enlightened-ajira/static/js/main.04de2ca8.chunk.js",
     "main.js.map": "/enlightened-ajira/static/js/main.04de2ca8.chunk.js.map",
     "runtime-main.js": "/enlightened-ajira/static/js/runtime-main.31b44902.js",
@@ -10,7 +10,7 @@
     "static/js/3.6a64a149.chunk.js": "/enlightened-ajira/static/js/3.6a64a149.chunk.js",
     "static/js/3.6a64a149.chunk.js.map": "/enlightened-ajira/static/js/3.6a64a149.chunk.js.map",
     "index.html": "/enlightened-ajira/index.html",
-    "static/css/main.62b81d41.chunk.css.map": "/enlightened-ajira/static/css/main.62b81d41.chunk.css.map",
+    "static/css/main.c2fbe5d0.chunk.css.map": "/enlightened-ajira/static/css/main.c2fbe5d0.chunk.css.map",
     "static/js/2.45e4430a.chunk.js.LICENSE.txt": "/enlightened-ajira/static/js/2.45e4430a.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/enlightened-ajira/static/media/img1.a5aecca2.jpg",
     "static/media/img2.1a5acb67.png": "/enlightened-ajira/static/media/img2.1a5acb67.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.31b44902.js",
     "static/js/2.45e4430a.chunk.js",
-    "static/css/main.62b81d41.chunk.css",
+    "static/css/main.c2fbe5d0.chunk.css",
     "static/js/main.04de2ca8.chunk.js"
   ]
 }
