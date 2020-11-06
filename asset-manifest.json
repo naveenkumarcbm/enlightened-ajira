@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/enlightened-ajira/static/css/main.62b81d41.chunk.css",
+    "main.js": "/enlightened-ajira/static/js/main.04de2ca8.chunk.js",
+    "main.js.map": "/enlightened-ajira/static/js/main.04de2ca8.chunk.js.map",
+    "runtime-main.js": "/enlightened-ajira/static/js/runtime-main.31b44902.js",
+    "runtime-main.js.map": "/enlightened-ajira/static/js/runtime-main.31b44902.js.map",
+    "static/js/2.45e4430a.chunk.js": "/enlightened-ajira/static/js/2.45e4430a.chunk.js",
+    "static/js/2.45e4430a.chunk.js.map": "/enlightened-ajira/static/js/2.45e4430a.chunk.js.map",
+    "static/js/3.6a64a149.chunk.js": "/enlightened-ajira/static/js/3.6a64a149.chunk.js",
+    "static/js/3.6a64a149.chunk.js.map": "/enlightened-ajira/static/js/3.6a64a149.chunk.js.map",
+    "index.html": "/enlightened-ajira/index.html",
+    "static/css/main.62b81d41.chunk.css.map": "/enlightened-ajira/static/css/main.62b81d41.chunk.css.map",
+    "static/js/2.45e4430a.chunk.js.LICENSE.txt": "/enlightened-ajira/static/js/2.45e4430a.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/enlightened-ajira/static/media/img1.a5aecca2.jpg",
+    "static/media/img2.1a5acb67.png": "/enlightened-ajira/static/media/img2.1a5acb67.png",
+    "static/media/img4.8a717b90.jpg": "/enlightened-ajira/static/media/img4.8a717b90.jpg",
+    "static/media/jeans.755fd995.png": "/enlightened-ajira/static/media/jeans.755fd995.png",
+    "static/media/shirt.b6497a0c.png": "/enlightened-ajira/static/media/shirt.b6497a0c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.31b44902.js",
+    "static/js/2.45e4430a.chunk.js",
+    "static/css/main.62b81d41.chunk.css",
+    "static/js/main.04de2ca8.chunk.js"
+  ]
+}
