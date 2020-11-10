@@ -1,4 +1,5 @@
 import React from 'react';
+import UserForm from '../form';
 import '../index.scss';
 
 const ProfileMenu = ({ profileMenu, selected, menuSelect }) => {
@@ -21,6 +22,9 @@ const ProfileMenu = ({ profileMenu, selected, menuSelect }) => {
               </h3>
             </div>
             <span>{menu.subMenu}</span>
+          </div>
+          <div className='show-mobile'>
+            {menu.id === selected.id && menu.content}
           </div>
         </>
       ))}

@@ -1,4 +1,5 @@
 footer {
+  position: relative;
   min-height: 40rem;
   background-color: #333333;
   color: #dddddd;
@@ -9,13 +10,22 @@ footer {
   align-items: center;
 
   p {
-      margin: 2rem 0;
+    display: flex;
+    align-items: center;
   }
 
   .address {
     h3 {
       margin: 2rem 0;
     }
+  }
+}
+
+.contact {
+  margin: 2rem 0;
+
+  ion-icon {
+    height: 1.5rem;
   }
 }
 
@@ -29,6 +39,21 @@ footer {
 .logo-container {
   display: flex;
   flex-direction: column;
+}
+
+.locate {
+  position: absolute;
+  position: absolute;
+  top: -4.8rem;
+  right: 6rem;
+
+  span {
+    display: flex;
+    align-items: center;
+    background: #000;
+    padding: 1rem 2rem;
+    border-radius: 1rem 1rem 0px 0px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -51,5 +76,9 @@ footer {
       flex-direction: column;
       align-items: center;
     }
+  }
+  .locate {
+    top: -6rem;
+    right: 10rem;
   }
 }

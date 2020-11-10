@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { AjirContext } from '../../App';
 import Logo from '../../components/logo';
 import './index.scss';
 
@@ -11,8 +12,10 @@ const myBrand = [
   'Store locator',
 ];
 
-const Header = ({onToggle}) => {
+const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [toogle, setToggle] = useContext(AjirContext);
+  const [active, setActive] = useState(0);
 
   return (
     <>
@@ -20,15 +23,16 @@ const Header = ({onToggle}) => {
         <Logo />
         <div className='menu'>
           {menu.map((m, i) => (
-            <span className={`menu ${i === 0 ? 'menu-active' : ''} `} key={i}>
+            <span onClick={() => setActive(i)} className={`menu ${i === active ? 'menu-active' : ''} `} key={i}>
               {m}
             </span>
           ))}
         </div>
-        <button className="btn btn-primary" onClick={onToggle}>Toggle</button>
+        <button className="btn btn-primary" onClick={() => setToggle(!toogle)}>Toggle</button>
         <div className='user-actions'>
           <ion-icon className='icons' name='search-outline'></ion-icon>
           <ion-icon className='icons' name='cart-outline'></ion-icon>
+          <ion-icon name="heart-outline"></ion-icon>
           <ion-icon className='icons' name='person-outline'></ion-icon>
           <span className='menu-icon'>
             <ion-icon
@@ -53,7 +57,7 @@ const Header = ({onToggle}) => {
           ))}
           <hr />
           {myBrand.map((val, i) => (
-            <h3 className={i === 0 ? 'menu-active' : ''} key={i + val}>
+            <h3 onClick={() => setActive(i)} className={i === 0 ? 'menu-active' : ''} key={i + val}>
               {val}
             </h3>
           ))}

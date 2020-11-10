@@ -3,8 +3,10 @@
   &-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 28rem;
+    
+    div:nth-child(2) {
+      margin-left: 4%;
+    }
   }
   &-image {
     height: 10rem;
@@ -15,12 +17,11 @@
   }
 
   &-menu {
-    // width: 26rem;
     height: 8rem;
     cursor: pointer;
 
     ion-icon:nth-child(1) {
-      display: none  !important;
+      display: none !important;
     }
     ion-icon:nth-child(2) {
       display: block !important;
@@ -30,13 +31,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin: 2rem;
+      margin: 2rem 0;
 
       & + span {
         color: #9b9b9b;
       }
     }
   }
+}
+
+.current-menu {
+  color: #777777;
 }
 
 .menu-selected {
@@ -128,19 +133,55 @@
   color: #777777;
 }
 
+.show-mobile {
+  display: none;
+}
+
+.show-desktop {
+  display: block;
+}
+
 @media (max-width: 991px) {
-  .profile-detail{
-    grid-template-columns: 1fr;
+  .profile {
+    padding: 0;
+
+    &-menu {
+      &-item {
+        margin: 2rem 0;
+      }
+      ion-icon:nth-child(1) {
+        display: block !important;
+      }
+      ion-icon:nth-child(2) {
+        display: none !important;
+      }
+    }
+    &-detail {
+      grid-template-columns: 1fr;
+    }
+    &-summary {
+      width: 100%;
+    }
+  }
+  .form-container {
+    min-height: 42rem !important;
+  }
+  .current-menu,
+  .form-title {
+    display: none;
+  }
+  .show-mobile {
+    display: block;
+  }
+  .show-desktop {
+    display: none !important;
   }
   .user-form {
     grid-template-areas:
       'fname' 'lname' 'email'
       'phone'
       'password'
-      'confirmpassword';
-  }
-  .profile-summary {
-    width: 100%;
+      'confirmpassword'
   }
   .order-card {
     ion-icon:nth-child(1) {
@@ -150,16 +191,14 @@
       display: block !important;
     }
   }
-  .profile-menu {
-    ion-icon:nth-child(1) {
-      display: block !important;
-    }
-    ion-icon:nth-child(2) {
-      display: none !important;
-    } 
+  .menu-selected::after {
+    border-bottom: solid 1px #000;
+    bottom: -1rem;
   }
+}
 
-  .profile {
-    padding: 0;
+@media (max-width: 450px) {
+  .show-mobile {
+    font-size: 1rem;
   }
 }

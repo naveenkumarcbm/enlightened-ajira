@@ -1,11 +1,11 @@
 import React from 'react';
-import img1 from '../assets/img/img2.png';
-import img2 from '../assets/img/img4.jpg';
-import img3 from '../assets/img/img1.jpg';
+import img1 from '../assets/img/img1.jpg';
+import img2 from '../assets/img/b2.png';
+import img3 from '../assets/img/b3.png';
 
 export const galleryList = [
   {
-    src: img3,
+    src: img1,
     overlay: (
       <>
         <span className='badge'>
@@ -19,7 +19,7 @@ export const galleryList = [
     ),
   },
   {
-    src: img1,
+    src: img2,
     overlay: (
       <>
         <span className='badge'>
@@ -32,7 +32,7 @@ export const galleryList = [
     ),
   },
   {
-    src: img3,
+    src: img2,
     overlay: (
       <span className='badge'>
         <span>Wrinkle-free</span> t-shirts
@@ -40,7 +40,7 @@ export const galleryList = [
     ),
   },
   {
-    src: img2,
+    src: img3,
     overlay: (
       <span className='badge'>
         <span>Stain-free</span> denim shirts

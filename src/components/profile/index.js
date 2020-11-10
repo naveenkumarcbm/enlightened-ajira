@@ -5,13 +5,7 @@ import ProfileMenu from './menu';
 import Orders from './orders';
 import UserForm from './form';
 
-const profileMenu = [
-  { id: 1, name: 'My Profile', subMenu: 'Notifications, password' },
-  { id: 2, name: 'My orders', subMenu: 'Already have 12 orders' },
-  { id: 3, name: 'Shipping addresses', subMenu: '3 addresses' },
-];
-
-const orders = [
+export const orders = [
   {
     order: '#12345678',
     orderDesc: 'Madeup White Cotton Blend Checkered Slim Fit Shirt',
@@ -46,15 +40,37 @@ const orders = [
   },
 ];
 
+const profileMenu = [
+  {
+    id: 1,
+    name: 'My Profile',
+    subMenu: 'Notifications, password',
+    content: <UserForm />,
+  },
+  {
+    id: 2,
+    name: 'My orders',
+    subMenu: 'Already have 12 orders',
+    content: <Orders orders={orders} />
+  },
+  {
+    id: 3,
+    name: 'Shipping addresses',
+    subMenu: '3 addresses',
+    content: <UserForm />,
+  },
+];
+
 const Profile = () => {
   const [selected, setSelected] = useState(profileMenu[0]);
-  
+
   const menuSelect = (menu) => {
     setSelected(menu);
   };
 
   return (
     <div className='profile'>
+      <div className='current-menu'>Home / My Profile</div>
       <div className='profile-detail'>
         <div>
           <div className='profile-container'>
@@ -74,7 +90,7 @@ const Profile = () => {
             />
           </div>
         </div>
-        <div className='profile-summary'>
+        <div className='profile-summary show-desktop'>
           {selected.id !== 1 && <Orders orders={orders} />}
           {selected.id === 1 && <UserForm />}
         </div>

@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AjirContext } from '../../App';
+import Category from '../../components/category';
 import Gallery from '../../components/gallery';
 import LatestCollection from '../../components/latest-collections';
 import Profile from '../../components/profile';
 import Review from '../../components/review';
 import Subscriber from '../../components/subscriber';
 
-const Main = ({ toogle }) => (
+const Main = () => {
+  const [toogle,] = useContext(AjirContext);
+
+return (
   <main>
     {toogle ? (
       <Profile />
     ) : (
       <>
+        <Category />
         <Gallery />
         <LatestCollection />
         <Review />
@@ -19,5 +25,6 @@ const Main = ({ toogle }) => (
     )}
   </main>
 );
+  }
 
 export default Main;

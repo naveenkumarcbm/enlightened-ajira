@@ -13,6 +13,12 @@ const menu = [
 const Footer = () => {
   return (
     <footer>
+      <div className="locate">
+        <span>
+          <ion-icon name='location-outline'></ion-icon>
+          LOCATE US
+        </span>
+      </div>
       <div className='footer-menu'>
         {menu.map((itm, i) => (
           <span key={i}>{itm}</span>
@@ -27,18 +33,20 @@ const Footer = () => {
           <ion-icon name='logo-youtube'></ion-icon>
         </div>
       </div>
-      <div className="address">
+      <div className='address'>
         <h3>Our Corporate Office </h3>
         <span>No: 7,A2B road, Adayar Rajpuram,</span>
         <span>T-Nagar, Chennai - 642002.</span>
-        <p>
-          <ion-icon name='mail-outline'></ion-icon>
-          sales@madeup.com
-        </p>
-        <p>
-          <ion-icon name='call-outline'></ion-icon>
-          044 9999 9999
-        </p>
+        <div className='contact'>
+          <p>
+            <ion-icon name='mail-outline'></ion-icon>
+            sales@madeup.com
+          </p>
+          <p>
+            <ion-icon name='call-outline'></ion-icon>
+            044 9999 9999
+          </p>
+        </div>
       </div>
     </footer>
   );
